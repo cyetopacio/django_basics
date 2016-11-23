@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Notes {% if note.title %} | {{ note.title }} {% endif %} {% endblock title
 %}
+
 {% block content %}
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
@@ -29,8 +30,8 @@ href="#">Delete</a>
 </div>
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
-<p> <a class="btn btn-raised btn-primary btn-xs"
-href="{% url 'index' %}">Back</a> </p>
+<p><a class="btn btn-raised btn-primary btn-xs"
+href="{% url 'index' %}">Back</a></p>
 </div>
 </div>
 {% endblock content %}
